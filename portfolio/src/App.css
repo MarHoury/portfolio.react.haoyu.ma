@@ -70,7 +70,7 @@ nav ul li {
   background: url(background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -303,6 +303,7 @@ nav ul li {
 .portfolio-wrapper {
   background: var(--primary-light-grey);
   padding: 3rem 0;
+  margin-top: 7rem;
 }
 
 .portfolio-wrapper h1 {
