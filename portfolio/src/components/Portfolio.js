@@ -15,80 +15,49 @@ const Portfolio = () => {
     const content = (
       <>
         <img className="portfolio-image-popupbox" src={covid19} alt="Covid 19" />
-        <p>test test test</p>
+        <p>This is a mobile application that captures the Covid-19 cases announced by DHB every day in real time and displays them in different ways. The back end is a Java application using Spring Boot, and the front end is two applications, one is based on React and the other is based on React Native.</p>
         <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/MarHoury/covid-19")}>https://github.com/MarHoury/covid-19</a>
       </>
     )
     PopupboxManager.open({content});
   }
 
-  const popupboxConfigCovid19 = {
-    titleBar: {
-      enable: true,
-      text: "Covid 19 Cases Project"
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  }
-
   const openPopupboxNewZealandTravelGuide = () => {
     const content = (
       <>
         <img className="portfolio-image-popupbox" src={newZealandTravelGuide} alt="New Zealand Travel Guide" />
-        <p>test test test</p>
+        <p>New Zealand Travel Guide is a mobile application based on Google Places API, which uses Flutter.</p>
         <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/MarHoury/new_zealand_travel_guide")}>https://github.com/MarHoury/new_zealand_travel_guide</a>
       </>
     )
     PopupboxManager.open({content});
   }
 
-  const popupboxConfigNewZealandTravelGuide = {
-    titleBar: {
-      enable: true,
-      text: "New Zealand Travel Guide Project"
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  }
-
   const openPopupboxMarketingSystem = () => {
     const content = (
       <>
         <img className="portfolio-image-popupbox" src={marketingSystem} alt="Marketing System" />
-        <p>test test test</p>
+        <p>The marketing system is an application that separates the front and back ends. The front end is implemented using Angular, and the back end is a Spring Boot application using Java.</p>
         <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/MarHoury/MarketingSystem")}>https://github.com/MarHoury/MarketingSystem</a>
       </>
     )
     PopupboxManager.open({content});
   }
 
-  const popupboxConfigMarketingSystem = {
-    titleBar: {
-      enable: true,
-      text: "Marketing System Project"
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  }
-
   const openPopupboxCityTour = () => {
     const content = (
       <>
         <img className="portfolio-image-popupbox" src={cityTourShanghai} alt="City Tour Shanghai" />
-        <p>test test test</p>
+        <p>City Tour is a front-end application implemented with Angular, mainly used to show different tourist attractions in the city of Shanghai.</p>
         <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/MarHoury/CityTours")}>https://github.com/MarHoury/CityTours</a>
       </>
     )
     PopupboxManager.open({content});
   }
 
-  const popupboxConfigCityTour = {
-    titleBar: {
-      enable: true,
-      text: "City Tour Shanghai Project"
-    },
+  const popupboxConfig = {
     fadeIn: true,
-    fadeInSpeed: 500
+    fadeInSpeed: 300
   }
 
   return (
@@ -118,10 +87,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <PopupboxContainer {...popupboxConfigCovid19}/>
-      <PopupboxContainer {...popupboxConfigNewZealandTravelGuide}/>
-      <PopupboxContainer {...popupboxConfigMarketingSystem}/>
-      <PopupboxContainer {...popupboxConfigCityTour}/>
+      <PopupboxContainer {...popupboxConfig}/>
     </div>
   )
 }
